@@ -2,7 +2,8 @@ import axios from 'axios';
 
 // ========== הגדרת כתובת ה-API כברירת מחדל ==========
 // זה הפורט שרץ אצלך!
-axios.defaults.baseURL = 'http://localhost:5290';
+// axios.defaults.baseURL = 'http://localhost:5290';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5290';
 
 // ========== Interceptor לטיפול בשגיאות ==========
 // זה תופס כל שגיאה שחוזרת מהסרבר ומדפיס אותה
