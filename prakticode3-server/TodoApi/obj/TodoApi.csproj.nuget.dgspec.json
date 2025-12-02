@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Downloads\\פרקטיקוד3\\TodoApi\\TodoApi.csproj": {}
+    "C:\\Users\\user1\\Desktop\\תשפו\\פרקטיקוד\\פרקטיקוד3\\פרקטיקוד3\\TodoApi\\TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Downloads\\פרקטיקוד3\\TodoApi\\TodoApi.csproj": {
+    "C:\\Users\\user1\\Desktop\\תשפו\\פרקטיקוד\\פרקטיקוד3\\פרקטיקוד3\\TodoApi\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Downloads\\פרקטיקוד3\\TodoApi\\TodoApi.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\תשפו\\פרקטיקוד\\פרקטיקוד3\\פרקטיקוד3\\TodoApi\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\user1\\Downloads\\פרקטיקוד3\\TodoApi\\TodoApi.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\תשפו\\פרקטיקוד\\פרקטיקוד3\\פרקטיקוד3\\TodoApi\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Downloads\\פרקטיקוד3\\TodoApi\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\תשפו\\פרקטיקוד\\פרקטיקוד3\\פרקטיקוד3\\TodoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.10, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.20.1, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
