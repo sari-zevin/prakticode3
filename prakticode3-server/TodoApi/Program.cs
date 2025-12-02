@@ -156,7 +156,6 @@ app.Run();*/
 
 
 
-
 using TodoApi;
 using Microsoft.EntityFrameworkCore;
 
@@ -169,16 +168,14 @@ builder.Services.AddDbContext<ToDoDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ToDoDB"))
     ));
 
-// הוספת CORS - גרסה מפורטת יותר
+// הוספת CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "https://localhost:3000")
+        policy.AllowAnyOrigin()
               .AllowAnyMethod()
-              .AllowAnyHeader()
-              .SetIsOriginAllowed(origin => true) // מאפשר מכל מקור
-              .AllowCredentials();
+              .AllowAnyHeader();
     });
 });
 
@@ -189,7 +186,7 @@ builder.Services.AddSwaggerGen();
 // בניית האפליקציה
 var app = builder.Build();
 
-// הפעלת CORS - חשוב שזה יהיה לפני UseHttpsRedirection!
+// CORS לפני הכל!
 app.UseCors();
 
 // הפעלת Swagger
@@ -199,7 +196,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// 👇 הסרנו את app.UseHttpsRedirection() - זה גורם לבעיות ב-Render!
 
 // Routes
 app.MapGet("/items", async (ToDoDbContext db) =>
