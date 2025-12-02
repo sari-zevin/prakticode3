@@ -27,6 +27,28 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
+
+
+
+// הוספת CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
+
+
+
+
+
 // בניית האפליקציה
 var app = builder.Build();
 
@@ -39,6 +61,10 @@ if (app.Environment.IsDevelopment())
 
 // הפעלת ה-CORS שהגדרנו למעלה
 app.UseCors("AllowAll");
+
+// שימוש ב-CORS
+app.UseCors("AllowAll");
+
 
 // ========== ROUTES - הניתובים של ה-API ==========
 
