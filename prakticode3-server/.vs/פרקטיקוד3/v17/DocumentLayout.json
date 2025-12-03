@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\",
+  "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|c:\\users\\user1\\desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\todoapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|c:\\users\\user1\\desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\todoapi\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|c:\\users\\user1\\desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|c:\\users\\user1\\desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\todoapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A9D74EAC-F660-8A73-E2EA-C8EF81470181}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -23,15 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Item.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Item.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Item.cs",
+              "RelativeToolTip": "TodoApi\\Item.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:06:51.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Program.cs",
+              "RelativeToolTip": "TodoApi\\Program.cs",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAqwPAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T02:00:58.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\TodoApi\\Dockerfile",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Dockerfile",
               "RelativeDocumentMoniker": "TodoApi\\Dockerfile",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\TodoApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05EA\u05E9\u05E4\u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D33\\prakticode3-server\\TodoApi\\Dockerfile",
               "RelativeToolTip": "TodoApi\\Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-02T00:36:06.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T00:36:06.223Z"
             }
           ]
         }
