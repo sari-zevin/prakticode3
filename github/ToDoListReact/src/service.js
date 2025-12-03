@@ -34,7 +34,7 @@ export const getTasks = async () => {
 export const addTask = async (name) => {
   const response = await axios.post('/items', {
     name: name,
-    isComplete: false
+    isComplete: 0
   });
   return response.data;
 };
