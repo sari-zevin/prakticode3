@@ -15,6 +15,13 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__ToDoDB")
                        ?? builder.Configuration.GetConnectionString("ToDoDB");
 
+
+// 👇 הוסיפי את זה כדי לראות את ה-Connection String בלוגים
+Console.WriteLine("=== CONNECTION STRING DEBUG ===");
+Console.WriteLine($"Connection String: {connectionString}");
+Console.WriteLine("=== END DEBUG ===");
+
+
 builder.Services.AddDbContext<ToDoDbContext>(options =>
     options.UseMySql(
         connectionString,
