@@ -8,35 +8,86 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative;
+}
+
+/* עיגולים מעוצבים ברקע */
+body::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+  z-index: 0;
 }
 
 .todoapp {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 550px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffa8a8 0%, #ffb8d1 50%, #c9a9ff 100%);
   padding: 40px 30px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* נצנצים ברקע הכותרת */
+.header::before {
+  content: '✨';
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.3;
+  top: 10px;
+  left: 20px;
+}
+
+.header::after {
+  content: '🌸';
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.3;
+  bottom: 10px;
+  right: 20px;
 }
 
 .header h1 {
   color: white;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 25px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header form {
@@ -47,38 +98,42 @@ body {
 .new-todo {
   flex: 1;
   padding: 15px 20px;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   background: white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .new-todo:focus {
   outline: none;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: #ffa8a8;
+  box-shadow: 0 6px 20px rgba(255, 168, 168, 0.3);
+  transform: translateY(-2px);
 }
 
 .new-todo::placeholder {
-  color: #aaa;
+  color: #d4a5a5;
 }
 
 .add-button {
   padding: 15px 30px;
-  background: white;
-  color: #667eea;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  color: white;
   border: none;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 154, 158, 0.3);
 }
 
 .add-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 154, 158, 0.4);
 }
 
 .main {
@@ -92,23 +147,26 @@ body {
 
 .todo-list li {
   padding: 18px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #ffe5ec;
   display: flex;
   align-items: center;
   gap: 15px;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .todo-list li:hover {
-  background: #f8f9ff;
+  background: linear-gradient(135deg, #fff5f7 0%, #fffaf0 100%);
+  transform: translateX(5px);
 }
 
 .todo-list li.completed {
-  background: #f0fdf4;
+  background: linear-gradient(135deg, #d4f8e8 0%, #e8f8f5 100%);
 }
 
 .todo-list li.completed label {
-  color: #9ca3af;
+  color: #a8d5ba;
   text-decoration: line-through;
 }
 
@@ -120,60 +178,83 @@ body {
 }
 
 .toggle {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-  border: 2px solid #667eea;
+  border: 2px solid #ffa8a8;
   border-radius: 50%;
   appearance: none;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .toggle:checked {
-  background: #667eea;
+  background: linear-gradient(135deg, #ffa8a8 0%, #ffb8d1 100%);
+  border-color: #ffa8a8;
+}
+
+.toggle:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .todo-list label {
   flex: 1;
   font-size: 1.1rem;
-  color: #333;
+  color: #4a4a4a;
   cursor: pointer;
 }
 
 .destroy {
-  width: 32px;
-  height: 32px;
-  background: #ff6b6b;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #ff9a9e 0%, #ff6b95 100%);
   border: none;
   border-radius: 50%;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 0.7;
-  font-size: 1.2rem;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .destroy:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: rotate(90deg) scale(1.15);
+  box-shadow: 0 6px 20px rgba(255, 107, 149, 0.4);
 }
 
 .destroy::after {
   content: "×";
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 /* Empty state */
 .todo-list:empty::after {
-  content: "✨ אין משימות! הוסיפי משימה למעלה";
+  content: "🌸 אין משימות! הוסיפי משימה חדשה";
   display: block;
   text-align: center;
   padding: 50px 20px;
-  color: #9ca3af;
+  color: #d4a5a5;
   font-size: 1.1rem;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
+  body::before,
+  body::after {
+    display: none;
+  }
+  
   .header h1 {
     font-size: 2rem;
   }
