@@ -922,3 +922,182 @@ html .clear-completed:active {
         bottom: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* ================================== */
+/* CSS גלובלי ורקע           */
+/* ================================== */
+
+body {
+    background-color: #f7f9fc; /* רקע אפור בהיר ונקי */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.todoapp {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ================================== */
+/* כותרת והוספה             */
+/* ================================== */
+
+.header {
+    background-color: #007bff; /* כחול מודרני */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.new-todo {
+    padding: 12px;
+    width: 65%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* ירוק לכפתור הוספה */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* ================================== */
+/* רשימת המשימות           */
+/* ================================== */
+
+.main {
+    padding: 0;
+}
+
+.todo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li:hover {
+    background-color: #fefefe;
+}
+
+/* עיצוב המשימה */
+.todo-list li .view {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.todo-list li label {
+    font-size: 1.1em;
+    margin-left: 15px;
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+/* משימה שהושלמה */
+.todo-list li.completed label {
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* צ'קבוקס (checkbox) */
+.toggle {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.toggle:checked::before {
+    content: '✔';
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* כפתור מחיקה */
+.destroy {
+    background-color: transparent;
+    border: none;
+    color: #dc3545; /* אדום למחיקה */
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.destroy::after {
+    content: '🗑️'; /* אימוג'י של פח אשפה */
+}
+
+.destroy:hover {
+    opacity: 1;
+}
+
+/* הסתרת כפתור המחיקה המקורי של TodoMVC אם קיים */
+.todo-list li:not(:hover) .destroy {
+    display: block; 
+}
