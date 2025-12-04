@@ -111,7 +111,8 @@ using Microsoft.AspNetCore.Mvc;
 // אנא ודא/י שה-namespace מתאים לשם הפרויקט שלך (לדוגמה: TodoApi)
 // קבצים אלו נוצרו ע"י פקודת ה-scaffold:
 // *******************************************************************
-using TodoApi.Models;
+using TodoApi;
+using TodoApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
