@@ -45,7 +45,7 @@ function App() {
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
-          <button type="submit" className="add-button">Add Task</button>
+          {/* <button type="submit" className="add-button">Add Task</button> */}
         </form>
 
         {/* <form onSubmit={createTodo}>
